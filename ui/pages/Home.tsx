@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Link } from '@chakra-ui/react';
 import React from 'react';
 
 import config from 'configs/app';
