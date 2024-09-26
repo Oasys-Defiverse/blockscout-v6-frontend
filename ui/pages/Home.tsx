@@ -1,4 +1,4 @@
-import { Box, Heading, Flex } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Link } from '@chakra-ui/react';
 import React from 'react';
 
 import config from 'configs/app';
@@ -15,6 +15,7 @@ import WalletMenuDesktop from 'ui/snippets/walletMenu/WalletMenuDesktop';
 const rollupFeature = config.features.rollup;
 
 const Home = () => {
+
   return (
     <Box as="main">
       <Box
@@ -41,6 +42,17 @@ const Home = () => {
           </Box>
         </Flex>
         <SearchBar isHomepage/>
+      </Box>
+      <Box w="100%" mt={ 4 }>
+        <Link href="https://phoenix.chaincolosseum.org" isExternal><Image
+          src="/static/ads_banner.jpg"
+          objectFit="contain"
+          maxW="100%"
+          maxH="100%"
+          objectPosition="center"
+          alt="banner ads"
+        />
+        </Link>
       </Box>
       <Stats/>
       <ChainIndicators/>
