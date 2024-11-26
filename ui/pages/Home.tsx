@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <Box as="main">
-      <Flex
+      <Box
         w="100%"
         background={ config.UI.homepage.plate.background }
         borderRadius="md"
@@ -64,7 +64,7 @@ const Home = () => {
           </Link>
         </Box>
         <AdBanner platform="mobile" w="fit-content" flexShrink={ 0 } borderRadius="md" overflow="hidden" display={{ base: 'none', lg: 'block ' }}/>
-      </Flex>
+      </Box>
       <Flex flexDir={{ base: 'column', lg: 'row' }} columnGap={ 2 } rowGap={ 1 } mt={ 3 } _empty={{ mt: 0 }}>
         <Stats/>
         <ChainIndicators/>
