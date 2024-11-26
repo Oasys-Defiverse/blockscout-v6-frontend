@@ -60,6 +60,7 @@ const Home = () => {
           objectFit="contain"
           maxW="100%"
           maxH="100%"
+          w={{ base: '100%' }}
           objectPosition="center"
           alt="banner ads"
         />
