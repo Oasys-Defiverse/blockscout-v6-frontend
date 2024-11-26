@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <Box as="main">
-      <Box
+      <Flex
         w="100%"
         background={ config.UI.homepage.plate.background }
         borderRadius="md"
@@ -52,18 +52,18 @@ const Home = () => {
           </Flex>
           <SearchBar isHomepage/>
         </Box>
-        <Box w="100%" mt={ 4 }>
-          <Link href="https://phoenix.chaincolosseum.org" isExternal><Image
-            src="/static/ads_banner.jpg"
-            objectFit="contain"
-            maxW="100%"
-            maxH="100%"
-            objectPosition="center"
-            alt="banner ads"
-          />
-          </Link>
-        </Box>
         <AdBanner platform="mobile" w="fit-content" flexShrink={ 0 } borderRadius="md" overflow="hidden" display={{ base: 'none', lg: 'block ' }}/>
+      </Flex>
+      <Box w="100%" mt={ 4 }>
+        <Link href="https://phoenix.chaincolosseum.org" isExternal><Image
+          src="/static/ads_banner.jpg"
+          objectFit="contain"
+          maxW="100%"
+          maxH="100%"
+          objectPosition="center"
+          alt="banner ads"
+        />
+        </Link>
       </Box>
       <Flex flexDir={{ base: 'column', lg: 'row' }} columnGap={ 2 } rowGap={ 1 } mt={ 3 } _empty={{ mt: 0 }}>
         <Stats/>
