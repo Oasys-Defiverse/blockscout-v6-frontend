@@ -31,6 +31,17 @@ const Home = () => {
   return (
     <Box as="main">
       <HeroBanner/>
+      <Box w="100%" mt={ 4 }>
+        <Link href="https://phoenix.chaincolosseum.org" isExternal><Image
+          src="/static/ads_banner.jpg"
+          objectFit="contain"
+          maxW="100%"
+          maxH="100%"
+          objectPosition="center"
+          alt="banner ads"
+        />
+        </Link>
+      </Box>
       <Flex flexDir={{ base: 'column', lg: 'row' }} columnGap={ 2 } rowGap={ 1 } mt={ 3 } _empty={{ mt: 0 }}>
         <Stats/>
         <ChainIndicators/>

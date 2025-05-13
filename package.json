@@ -8,6 +8,7 @@
     "npm": "10.8.2"
   },
   "scripts": {
+    "next-dev": "./tools/scripts/dev.sh && next dev",
     "dev": "./tools/scripts/dev.sh",
     "dev:preset": "./tools/scripts/dev.preset.sh",
     "dev:preset:sync": "tsc -p ./tools/preset-sync/tsconfig.json && node ./tools/preset-sync/index.js",

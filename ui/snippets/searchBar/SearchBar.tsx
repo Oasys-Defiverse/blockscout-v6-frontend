@@ -126,9 +126,9 @@ const SearchBar = ({ isHomepage }: Props) => {
       resizeObserver.unobserve(inputEl);
     };
   }, [ calculateMenuWidth ]);
-  const transformMobile = scrollDirection !== 'down' ? 'translateY(0)' : 'translateY(-200%)';
-  const positionMobile = scrollDirection !== 'down' ? 'relative' : 'absolute';
-  const zIndexMobile = scrollDirection !== 'down' ? undefined : -1;
+  const transformMobile =  scrollDirection !== 'down' ? 'translateY(0)' : isMobile ?  'translateY(-200%)' : 'translateY(0)';
+  const positionMobile = scrollDirection !== 'down' ? 'relative' :  isMobile ? 'absolute' : 'relative';
+  const zIndexMobile = scrollDirection !== 'down' ? undefined : isMobile ? -1 : undefined;
   return (
     <>
       <Popover
